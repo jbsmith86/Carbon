@@ -1,9 +1,7 @@
 Ameriblog
 =========
 
-Django blogging platform
-
-best used on a Debian Linux server
+Django blogging platform best used on a Debian Linux server
 
 ##Installation
 install in /var/www/Ameriblog
