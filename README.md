@@ -1,15 +1,15 @@
-Ameriblog
+Titan
 =========
 
 Django blogging platform
 
 ##Installation
 best used on a Debian Linux server
-**install in /var/www/Ameriblog**
+**install in /var/www/titan**
 
 create django database:
 ```
-cd /var/www/Ameriblog
+cd /var/www/titan
 python manage.py syncdb
 ```
 
@@ -17,7 +17,7 @@ python manage.py syncdb
 
 configure nginx and start uwsgi:
 ```
-ls /var/www/Ameriblog/nginx.conf /etc/nginx/sites-enabled
+ls /var/www/titan/nginx.conf /etc/nginx/sites-enabled
 /etc/init.d/nginx restart
-uwsgi --socket :8000 --wsgi-file /var/www/Ameriblog/american/wsgi.py --chdir /var/www/Ameriblog
+uwsgi --socket :8000 --wsgi-file /var/www/titan/american/wsgi.py --chdir /var/www/titan
 ```

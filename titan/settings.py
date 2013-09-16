@@ -1,5 +1,5 @@
 # coding: utf-8
-# Django settings for american project.
+# Django settings for titan project.
 import os
 import sys
 
@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'american.db',                      # Or path to database file if using sqlite3.
+        'NAME': 'titan.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -107,10 +107,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'american.urls'
+ROOT_URLCONF = 'titan.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'american.wsgi.application'
+WSGI_APPLICATION = 'titan.wsgi.application'
 
 TEMPLATE_DIRS = (
     PROJECT_PATH + '/templates/',
