@@ -1,15 +1,15 @@
-Titan
+Carbon
 =========
 
 Django blogging platform
 
 ##Installation
 best used on a Debian Linux server
-**install in /var/www/titan**
+**install in /var/www/carbon**
 
 create django database:
 ```
-cd /var/www/titan
+cd /var/www/carbon
 python manage.py syncdb
 ```
 
@@ -17,7 +17,7 @@ python manage.py syncdb
 
 configure nginx and start uwsgi:
 ```
-ls /var/www/titan/nginx.conf /etc/nginx/sites-enabled
+ls /var/www/carbon/nginx.conf /etc/nginx/sites-enabled
 /etc/init.d/nginx restart
-uwsgi --socket :8000 --wsgi-file /var/www/titan/american/wsgi.py --chdir /var/www/titan
+uwsgi --socket :8000 --wsgi-file /var/www/carbon/american/wsgi.py --chdir /var/www/carbon
 ```
