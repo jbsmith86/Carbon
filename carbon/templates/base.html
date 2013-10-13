@@ -8,9 +8,18 @@
 		</title>
 		</head>
 	<body>
-		<div class ="content">
-			{% block content %}
-			{% endblock %}
+		<div class="header">
+			<h1>Welcome to My Blog</h1>
+		</div>
+		<div class="main">
+			<div class="content">
+				{% block content %}
+				{% endblock %}
+			</div>
+			<div class="nav">
+				{% block nav %}
+				{% endblock %}
+			</div>
 		</div>
 	</body>
 </html>
