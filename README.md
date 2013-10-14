@@ -9,7 +9,7 @@ best used on a Debian Linux server
 
 create django database:
 ```
-cd /var/www/carbon
+cd /var/www/Carbon
 python manage.py syncdb
 ```
 
@@ -17,7 +17,7 @@ python manage.py syncdb
 
 configure nginx and start uwsgi:
 ```
-ls /var/www/carbon/nginx.conf /etc/nginx/sites-enabled
+ls /var/www/Carbon/nginx.conf /etc/nginx/sites-enabled
 /etc/init.d/nginx restart
-uwsgi --socket :8000 --wsgi-file /var/www/carbon/american/wsgi.py --chdir /var/www/carbon
+uwsgi --socket :8000 --wsgi-file /var/www/Carbon/carbon/wsgi.py --chdir /var/www/Carbon
 ```
