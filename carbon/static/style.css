@@ -49,3 +49,8 @@ div.nav{
 	overflow: hidden;
 	position: relative;
 }
+
+.nav a.link, a.visited, a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
