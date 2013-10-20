@@ -6,13 +6,17 @@
 		<title>
 			{% block title %}{% endblock %}
 		</title>
-		</head>
+	</head>
+
 	<body>
+		
 		<div class="header">
 			<h1>Welcome to My Blog</h1>
 		</div>
+		
 		<div class="main">
-				<div class = "contentcontainer">
+			<div class="navcontainer">
+				<div class="contentcontainer">
 					
 					<div class="content">
 						{% block content %}
@@ -21,10 +25,12 @@
 					
 					<div class="nav">
 						{% block nav %}
-						<a href="/">Home</a>
+						<br><a href="/">Home</a>
 						{% endblock %}
 					</div>
 				</div>
+			</div>
 		</div>
+
 	</body>
 </html>

@@ -16,9 +16,7 @@ div.header{
 	margin-top: 60px;
 }
 
-.main{
-	padding-top: 60px;
-	padding-bottom: 60px;
+div.main{
 	background-color: #fff;
 	position: relative;
 	clear: both;
@@ -28,11 +26,15 @@ div.header{
 }
 
 div.contentcontainer{
+	min-height: 720px;
+	clear: both;
 	position: relative;
-	right: 25%;
+	right: 23%;
 }
 
 div.content{
+	min-height: 720px;
+	padding-top: 60px;
 	float: left;
 	width: 71%;
 	left: 27%;
@@ -41,11 +43,23 @@ div.content{
 	background-color: #ffffff;
 }
 
+div.navcontainer{
+	min-height: 720px;
+	float:left;
+    width:100%;
+    position:relative;
+}
+
 div.nav{
+	min-height: 780px;
 	float: left;
-	width: 21%;
+	width: 23%;
 	left: 31%;
 	background-color: #363941;
 	overflow: hidden;
 	position: relative;
+	text-indent: 30px;
+	font-size: 24px;
 }
+
+a:visited {color:#000000; text-decoration:none;}
