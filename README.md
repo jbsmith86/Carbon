@@ -13,7 +13,13 @@ cd /var/www/Carbon
 python manage.py syncdb
 ```
 
-**install nginx and uwsgi**
+install nginx and uwsgi
+```
+apt-get install nginx
+pip install uwsgi
+```
+
+set folders to chmod 755 and files to chmod 644
 
 configure nginx and start uwsgi:
 ```

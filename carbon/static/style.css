@@ -62,4 +62,11 @@ div.nav{
 	font-size: 24px;
 }
 
+<<<<<<< HEAD
 a:visited {color:#000000; text-decoration:none;}
+=======
+.nav a.link, a.visited, a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+>>>>>>> 5ba06a2be99e7bad17b017b0e2cf5495bb3c9aee
