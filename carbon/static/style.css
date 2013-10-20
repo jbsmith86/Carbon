@@ -1,11 +1,14 @@
 body{
 	background-color: #656F7B;
-	color: #000000;
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
 	line-height: 28px;
 	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a:link, a:visited{
+	color: #000000;
 }
 
 div.header{
@@ -22,7 +25,7 @@ div.main{
 	clear: both;
 	overflow: hidden;
 	width: 70%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 div.contentcontainer{
@@ -46,8 +49,8 @@ div.content{
 div.navcontainer{
 	min-height: 720px;
 	float:left;
-    width:100%;
-    position:relative;
+    	width:100%;
+    	position:relative;
 }
 
 div.nav{
@@ -62,7 +65,8 @@ div.nav{
 	font-size: 24px;
 }
 
-.nav a.link, a.visited, a:hover{
-	color: #ffffff;
-	text-decoration: none;
+div.nav a:link, a:visited{
+	color: #ffffff
 }
+
+
