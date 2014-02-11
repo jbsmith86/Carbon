@@ -1,7 +1,7 @@
 Carbon
 =========
 
-Django blogging platform
+Carbon is a Django based blogging platform
 
 ##Installation
 best used on a Debian Linux server
