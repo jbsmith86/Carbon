@@ -19,7 +19,11 @@ apt-get install nginx
 pip install uwsgi
 ```
 
-set folders to chmod 755 and files to chmod 644
+set folders to chmod 755 and files to chmod 644 (make sure you are in the Carbon directory)
+```
+find . -type d -print0 | xargs -0 chmod 0755
+find . -type f -print0 | xargs -0 chmod 0644
+```
 
 configure nginx and start uwsgi:
 ```
