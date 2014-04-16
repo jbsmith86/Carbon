@@ -3,6 +3,7 @@ from blog.models import Post
 
 def index(request):
 	posts = Post.objects.filter(published=True)
+  pages = Page.objects.all
 	return render(request, 'blog/index.html', {'posts': posts})
 
 def post(request, slug):
