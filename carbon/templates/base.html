@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}base.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}layout.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}skeleton.css">
 		<meta charset="utf-8">
 		<title>
 			{% block title %}{% endblock %}
@@ -9,27 +11,24 @@
 	</head>
 
 	<body>
-		
-		<div class="header">
-			<h1>Welcome to My Blog</h1>
-		</div>
-		
-		<div class="main">
-			<div class="navcontainer">
-				<div class="contentcontainer">
-					
-					<div class="content">
-						{% block content %}
-						{% endblock %}
-					</div>
-					
-					<div class="nav">
-						{% block nav %}
-						<br><a href="/">Home</a>
-						{% endblock %}
-					</div>
-				</div>
+
+		<div class="container">
+
+			<div class="three columns sidebar">
+				<nav>
+					{% block nav %}
+					<br><a href="/">Home</a>
+					{% endblock %}
+				</nav>
 			</div>
+
+
+			<div class="twelve columns offset-by-one content">
+				<header>Welcome to My Blog</header>
+				{% block content %}
+				{% endblock %}
+			</div>
+
 		</div>
 
 	</body>
