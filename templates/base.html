@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static "blog/base.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "blog/layout.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "blog/skeleton.css" %}">
+		<meta charset="utf-8">
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<br class="clear">
+			<div class="three columns sidebar">
+				<br class="clear">
+				<nav>
+					<h4>
+						{% block nav %}
+						<a href="/">Home</a>
+						{% endblock %}
+					</h4>
+				</nav>
+			</div>
+
+
+			<div class="twelve columns offset-by-one content">
+				<h1>Welcome to My Blog</h1>
+				{% block content %}
+				{% endblock %}
+			</div>
+
+		</div>
+
+	</body>
+</html>

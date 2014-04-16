@@ -5,6 +5,7 @@ Carbon is a Django based blogging platform
 
 ##Installation
 best used on a Debian Linux server
+
 **install in /var/www/Carbon**
 
 create django database:
@@ -29,5 +30,5 @@ configure nginx and start uwsgi:
 source /var/www/Carbon/bin/activate
 ln -s /var/www/Carbon/nginx.conf /etc/nginx/sites-enabled
 /etc/init.d/nginx restart
-uwsgi --socket :8000 --wsgi-file /var/www/Carbon/carbon/wsgi.py --chdir /var/www/Carbon
+uwsgi --socket :8000 --wsgi-file /var/www/Carbon/carbonpaper/wsgi.py --chdir /var/www/Carbon
 ```
