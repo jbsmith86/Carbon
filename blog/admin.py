@@ -9,4 +9,7 @@ class PostAdmin(admin.ModelAdmin):
 	save_on_top = True
 	prepopulated_fields = {"slug": ("title",)}
 
-admin.site.register(Post, PostAdmin)
+class PageAdmin(admin.ModelAdmin):
+  list_display = ['name','url']
+
+admin.site.register(Post, PostAdmin, Page, PageAdmin)
