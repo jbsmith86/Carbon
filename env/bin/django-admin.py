@@ -1,4 +1,4 @@
-#!/Users/joel/Projects/Carbon/env/bin/python2.7
+#!/var/www/Carbon/env/bin/python
 from django.core import management
 
 if __name__ == "__main__":
