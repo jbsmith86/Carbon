@@ -12,13 +12,16 @@
 				{{post.title}}
 			</a>
 		</h2>
-		<p>{{post.description}}</p>
+		{{post.description}}
 		{{post.content|safe}}
+		<br class="clear">
 		<p>
+			<sub>
 			Posted on
 			<time datetime="{{post.created|date:"c"}}">
 				{{post.created|date}}
 			</time>
+			</sub>
 		</p>
 	</div>
 	{% endfor %}
