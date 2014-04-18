@@ -13,6 +13,7 @@
 			</a>
 		</h2>
 		<p>{{post.description}}</p>
+		{{post.content|safe}}
 		<p>
 			Posted on
 			<time datetime="{{post.created|date:"c"}}">
